@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Task</title>
+</head>
+<body>
+    <div class="centered-content">
+        <div class="modal-box">
+            <h1 class="title">Create New Task</h1>
+            <div class="input-group">
+                <input #taskTitleInput type="text" class="form-control" placeholder="Task title" aria-label="Task title" aria-describedby="button-addon1">
+                <button class="btn-create-task" type="button" (click)="createTask(taskTitleInput.value)">Create</button>
+            </div>
+            <button routerLink="/" class="button">Go Back</button>
+        </div>
+    </div>
+</body>
+</html>

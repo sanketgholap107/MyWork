@@ -1,0 +1,21 @@
+<div class="centered-content">
+    <div class="login-box">
+        <form>
+            <div class="form-group">
+                <h1>Login </h1>
+              <label for="exampleInputEmail1"></label>
+              <input #emailInput type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"></label>
+              <input #passwordInput type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <br>
+            <br>
+            <!-- <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            </div> -->
+            <button type="submit" class="btn btn-dark" (click)="onLoginButtonClicked(emailInput.value , passwordInput.value)">Login</button>
+          </form>
+    </div>
+</div>
