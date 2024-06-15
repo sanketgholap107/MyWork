@@ -1,0 +1,116 @@
+/**
+* document.getElementById('')
+* document.getElementByclassName('')
+* document.getAttribute('Enter key here ,e.g:id,class')
+* document.getElementById('title').setAttribute('class','test')
+* document.getElementById('title').style.backgroundColor='green'
+* const title = document.getElementById('title')
+*
+* Output of following three DOM's are same but :
+* title.textContent/.innerHTML/.innerText
+* textContent: it displayes whole text which is written in code. means if some text is hidden , still it will display
+that text.
+* innerText:in this case it does not display hidden text.it only shows whatever that is getting displayed.
+* innerHTML: it gives whole html text that is included in line.
+*
+* document.querySelector('h1')
+* document.querySelector('#title')
+* document.querySelector('.heading')
+* document.querySelector('input[type="password"]')
+*
+* querySelectorAll returns NodeList datatype. NodeList is not an array.
+* const heading = document.querySelectorAll('h1')
+* heading.style.color = green //error
+* heading[0].style.color = green //correct way
+*
+* querySelector does not return NodeList.
+*
+* for HtmlCollection and NodeList datatypes , we need to convert them into array.
+* Array.from(NAME)
+*
+*/
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="day">mon</div>
+        <div class="day">tue</div>
+        <div class="day">wed</div>
+        <div class="day">thurs</div>
+    </div>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("python")
+    addLanguage("typescript")
+
+    //optimized approach:
+    function addOptiLanguage(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('golang')
+
+    // Edit the element:
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "Mojo"
+    // secondLang.outerHTML = "<li>TypeScript</li>"
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli)
+
+    //remove:
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children); o/p:HTMLCollection[]
+    // console.log(parent.children[1].innerHTML);
+    // parent.children[1].style.color = "orange"
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    // const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+
+    // console.log("NODES: ", parent.childNodes);
+
+    // way of creating an element:
+    const div = document.createElement('div')
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+
+    // two ways of adding text:
+    div.innerText = "chai aur code" //1st way
+
+    //2nd way:
+    const addText = document.createTextNode("char aur code")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+</script>
+
+</html>
