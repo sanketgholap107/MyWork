@@ -1,0 +1,48 @@
+.footer {
+  background-color: #0d4ea4;
+  color: #fcfcfc;
+  /* padding: 5px; */
+  text-align: center;
+  font-size: larger;
+  /* height: 100px; */
+}
+
+.footer-container {
+  display: grid;
+    grid-template-columns: 1fr 8fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-container div {
+  font-size: smaller;
+  margin-top: auto;
+}
+
+.footer-container div a{
+  color: #fcfcfc;
+  text-decoration-line: none;
+  font-size: smaller;
+}
+
+.footer-container div span{
+  padding: 0px 40px;
+}
+
+.footer-container div #p2{
+  font-size: smaller;
+}
+.lion{
+  /* height: 100px; */
+  width: 100px;
+}
+
+.IR{
+  width: 80;
+  height: 70px;
+}
+
+.Novius-logo{
+  width: 183px;
+  height: 61px;
+}

@@ -1,0 +1,125 @@
+/* .main_div{
+  width:100%
+}
+
+.table_container {
+  margin: 10px; 
+   width: calc(100% - 20px);
+} */
+
+/* table {
+  width: 88%;
+  border-collapse: collapse;
+  font-size: 1em;
+  font-family: "Arial", sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin: 10px;
+}
+
+thead tr {
+  color: black;
+  text-align: left;
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 8px 10px; //Adjust padding to make it fit better
+  border: 1px solid black;
+  word-wrap: break-word; //Ensure text wraps within the cell
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+} */
+
+.green-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s;
+}
+
+.green-button:hover {
+  background-color: darkgreen;
+}
+
+.blue_button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s;
+}
+
+.blue_button:hover {
+  background-color: #0056b3;
+}
+
+.main_div {
+  margin: 10px;
+  /* overflow-x: hidden; */
+}
+
+#table-container {
+  max-width: 100%;
+  /* overflow-x: ; */
+}
+
+table {
+  width: 100%;
+  max-width: 1450px;
+  /* width: auto; */
+  /* width: -webkit-fill-available; */
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensures the table doesn't expand beyond its container */
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  align-content: center;
+  border: 1px solid #000;
+  word-wrap: break-word; /* Allows text to wrap within the cell */
+  vertical-align: top;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+thead th {
+  font-weight: bold;
+  /* white-space: nowrap; Prevents headers from wrapping */
+}
+
+tbody td {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.yellow-button {
+  background-color: #fcba04;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s;
+}
+
+.yellow-button:hover {
+  background-color: #a87c02;
+}

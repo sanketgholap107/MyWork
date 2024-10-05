@@ -1,0 +1,116 @@
+.pending-tasks-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.pending-tasks-container .cont{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+
+}
+
+.pending-tasks-container h1{
+    text-align: center;
+    background-color: #2f2f2f;
+    color: #fcfcfc;
+    font-weight: 800;
+    padding: 5px;
+}
+
+.pending-tasks-container .tred-turning{
+    text-align: center;
+    font-size: large;
+}
+
+.pending-tasks-container .wheel-assembly{
+    text-align: center;
+    font-size: large;
+}
+
+.pending-tasks-container .roller-bearing{
+    text-align: center;
+    font-size: large;
+}
+
+.pending-tasks-container .press-on{
+    text-align: center;
+    font-size: large;
+}
+/* table{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    } */
+    
+ .tt  table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
+    
+    thead th {
+        background-color: #3e3e3e;
+        color: white;
+    padding: 10px;
+    text-align: center;
+    /* text-align: left; */
+    font-weight: bold;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: center;
+    /* text-align: left; */
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.sidebar2{
+    display: flex;
+    flex-direction: row;
+    /* column-gap: 25px; */
+}
+
+.sidebarlist2{
+    padding-left: initial;
+}
+
+.sidebarlist2 li{
+    list-style-type: none;
+    padding: 10px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: -14px 15px 9px -15px rgb(166, 165, 165);
+}
+
+.tt h3{
+    text-align: left;
+    background-color: rgba(182, 181, 181, 0.8);
+    /* opacity: 0.8; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+

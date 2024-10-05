@@ -1,0 +1,77 @@
+/* .sidebarBG{
+    background-image: url("../../assets/Digi-WorkshopBG7.png");
+} */
+
+.sidebar {
+    /* position: fixed; */
+    /* left: 0; */
+    background-color: #0d4ea4; 
+    padding: 0px 10px;
+    width: 33px;
+    display: flex;
+    flex-direction: row;
+    color: #fcfcfc;
+    font-weight: 900;
+    align-items: center;
+    gap: 15px;
+    transition: width 0.3s ease;
+    overflow: hidden; 
+    align-items: flex-start;
+    /* z-index: 100; */
+    /* border-top-right-radius: 10px; */
+    /* border-bottom-right-radius: 10px; */
+  }
+
+
+.icons-container {
+    /* position: fixed;
+    left: 0; */
+    padding: 10px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    color: #fcfcfc;
+    font-weight: 900;
+    align-items: center;
+    gap: 25px; 
+}
+
+.sidebar-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 19px;
+    cursor: pointer;
+    padding-top: 9px;
+    /* background-color: #fcfcfc; */
+}
+
+.sidebar-content a {
+    color: #fcfcfc; /* White color for the links */
+    text-decoration: none; /* Remove underline */
+    /* font-weight: 600;  */
+}
+
+.sidebar:hover{
+    width: 230px;
+}
+
+.sidebar-content .train{
+    display: flex;
+    /* margin-left: 42px; */
+    flex-direction: column;
+    row-gap: 22px;
+    font-weight: 700;
+}
+
+.sidebar-content div{
+    width: max-content;
+}
+/* .sidebar:hover .icons-container{
+    margin-right: 0%;
+} */
+
+
+.sidebar:hover .sidebar-content div{
+
+}
+
