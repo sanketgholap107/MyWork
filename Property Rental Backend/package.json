@@ -1,0 +1,27 @@
+{
+  "name": "property-rental-backend",
+  "version": "1.0.0",
+  "description": "Property Rental Backend",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "dev": "nodemon app.js",
+    "build": "echo 'Building the project...' && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prathamesh Saraf",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "log4js": "^6.9.1",
+    "mssql": "^11.0.1",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
